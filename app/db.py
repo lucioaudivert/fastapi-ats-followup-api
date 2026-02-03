@@ -1,6 +1,6 @@
 """Database session and engine management."""
 
-from sqlmodel import SQLModel, Session, create_engine
+from sqlmodel import create_engine, Session, SQLModel
 
 from .settings import settings
 

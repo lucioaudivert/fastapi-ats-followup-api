@@ -1,7 +1,8 @@
 """FastAPI application entrypoint."""
 
-import logging
 from contextlib import asynccontextmanager
+import logging
+from typing import Annotated
 
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from sqlmodel import Session
@@ -48,7 +49,7 @@ def health_check() -> dict[str, str]:
 )
 def create_candidate_endpoint(
     payload: CandidateCreate,
-    session: Session = Depends(get_session),
+    session: Annotated[Session, Depends(get_session)],
 ) -> CandidateRead:
     candidate = create_candidate(session, payload)
     logger.info("Candidate created", extra={"candidate_id": candidate.id})
@@ -57,9 +58,9 @@ def create_candidate_endpoint(
 
 @app.get("/candidates", response_model=list[CandidateRead])
 def list_candidates_endpoint(
-    stage: Stage | None = Query(default=None),
-    q: str | None = Query(default=None, min_length=1),
-    session: Session = Depends(get_session),
+    session: Annotated[Session, Depends(get_session)],
+    stage: Annotated[Stage | None, Query()] = None,
+    q: Annotated[str | None, Query(min_length=1)] = None,
 ) -> list[CandidateRead]:
     return list_candidates(session, stage=stage, query=q)
 
@@ -67,7 +68,7 @@ def list_candidates_endpoint(
 @app.get("/candidates/{candidate_id}", response_model=CandidateRead)
 def get_candidate_endpoint(
     candidate_id: int,
-    session: Session = Depends(get_session),
+    session: Annotated[Session, Depends(get_session)],
 ) -> CandidateRead:
     try:
         return get_candidate(session, candidate_id)
@@ -83,7 +84,7 @@ def get_candidate_endpoint(
 def create_followup_endpoint(
     candidate_id: int,
     payload: FollowUpCreate,
-    session: Session = Depends(get_session),
+    session: Annotated[Session, Depends(get_session)],
 ) -> FollowUpRead:
     try:
         followup = create_followup(session, candidate_id, payload)
@@ -100,7 +101,7 @@ def create_followup_endpoint(
 @app.get("/candidates/{candidate_id}/followups", response_model=list[FollowUpRead])
 def list_followups_endpoint(
     candidate_id: int,
-    session: Session = Depends(get_session),
+    session: Annotated[Session, Depends(get_session)],
 ) -> list[FollowUpRead]:
     try:
         return list_followups(session, candidate_id)

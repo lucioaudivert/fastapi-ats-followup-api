@@ -1,17 +1,17 @@
 """SQLModel models for candidates and follow-ups."""
 
-from datetime import datetime, timezone
-from enum import Enum
+from datetime import UTC, datetime
+from enum import StrEnum
 
 from pydantic import EmailStr
 from sqlmodel import Field, Relationship, SQLModel
 
 
 def utc_now() -> datetime:
-    return datetime.now(timezone.utc)
+    return datetime.now(UTC)
 
 
-class Stage(str, Enum):
+class Stage(StrEnum):
     sourced = "sourced"
     interview = "interview"
     offered = "offered"
@@ -19,7 +19,7 @@ class Stage(str, Enum):
     rejected = "rejected"
 
 
-class Channel(str, Enum):
+class Channel(StrEnum):
     email = "email"
     whatsapp = "whatsapp"
     call = "call"

@@ -1,0 +1,1024 @@
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento
+'Linkedin-Github/fastapi-ats-followup-api'.
+En línea: 1 Carácter: 1
++ cd /mnt/f/Lucio/Repo Linkedin-Github/fastapi-ats-followup-api
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api>   .\.venv\Scripts\Activate.ps1
+(.venv) PS F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api>   pip install -r requirements-dev.txt
+Requirement already satisfied: fastapi>=0.110 in .\.venv\Lib\site-packages (from -r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 1)) (0.128.0)
+Requirement already satisfied: uvicorn>=0.27 in .\.venv\Lib\site-packages (from uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (0.40.0)
+Requirement already satisfied: sqlmodel>=0.0.16 in .\.venv\Lib\site-packages (from -r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 3)) (0.0.32)
+Requirement already satisfied: pydantic-settings>=2.2 in .\.venv\Lib\site-packages (from -r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 4)) (2.12.0)
+Requirement already satisfied: pydantic>=2.6 in .\.venv\Lib\site-packages (from pydantic[email]>=2.6->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 5)) (2.12.5)
+Requirement already satisfied: pytest>=8.0 in .\.venv\Lib\site-packages (from -r requirements-dev.txt (line 2)) (9.0.2)
+Requirement already satisfied: httpx>=0.26 in .\.venv\Lib\site-packages (from -r requirements-dev.txt (line 3)) (0.28.1)
+Requirement already satisfied: ruff>=0.4 in .\.venv\Lib\site-packages (from -r requirements-dev.txt (line 4)) (0.15.0)
+Requirement already satisfied: black>=24.0 in .\.venv\Lib\site-packages (from -r requirements-dev.txt (line 5)) (26.1.0)
+Requirement already satisfied: starlette<0.51.0,>=0.40.0 in .\.venv\Lib\site-packages (from fastapi>=0.110->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 1)) (0.50.0)
+Requirement already satisfied: typing-extensions>=4.8.0 in .\.venv\Lib\site-packages (from fastapi>=0.110->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: annotated-doc>=0.0.2 in .\.venv\Lib\site-packages (from fastapi>=0.110->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 1)) (0.0.4)
+Requirement already satisfied: anyio<5,>=3.6.2 in .\.venv\Lib\site-packages (from starlette<0.51.0,>=0.40.0->fastapi>=0.110->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 1)) (4.12.1)
+Requirement already satisfied: idna>=2.8 in .\.venv\Lib\site-packages (from anyio<5,>=3.6.2->starlette<0.51.0,>=0.40.0->fastapi>=0.110->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 1)) (3.11)
+Requirement already satisfied: click>=7.0 in .\.venv\Lib\site-packages (from uvicorn>=0.27->uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (8.3.1)
+Requirement already satisfied: h11>=0.8 in .\.venv\Lib\site-packages (from uvicorn>=0.27->uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (0.16.0)
+Requirement already satisfied: SQLAlchemy<2.1.0,>=2.0.14 in .\.venv\Lib\site-packages (from sqlmodel>=0.0.16->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 3)) (2.0.46)
+Requirement already satisfied: greenlet>=1 in .\.venv\Lib\site-packages (from SQLAlchemy<2.1.0,>=2.0.14->sqlmodel>=0.0.16->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 3)) (3.3.1)
+Requirement already satisfied: python-dotenv>=0.21.0 in .\.venv\Lib\site-packages (from pydantic-settings>=2.2->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 4)) (1.2.1)
+Requirement already satisfied: typing-inspection>=0.4.0 in .\.venv\Lib\site-packages (from pydantic-settings>=2.2->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 4)) (0.4.2)
+Requirement already satisfied: annotated-types>=0.6.0 in .\.venv\Lib\site-packages (from pydantic>=2.6->pydantic[email]>=2.6->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 5)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in .\.venv\Lib\site-packages (from pydantic>=2.6->pydantic[email]>=2.6->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 5)) (2.41.5)
+Requirement already satisfied: colorama>=0.4 in .\.venv\Lib\site-packages (from pytest>=8.0->-r requirements-dev.txt (line 2)) (0.4.6)
+Requirement already satisfied: iniconfig>=1.0.1 in .\.venv\Lib\site-packages (from pytest>=8.0->-r requirements-dev.txt (line 2)) (2.3.0)
+Requirement already satisfied: packaging>=22 in .\.venv\Lib\site-packages (from pytest>=8.0->-r requirements-dev.txt (line 2)) (26.0)
+Requirement already satisfied: pluggy<2,>=1.5 in .\.venv\Lib\site-packages (from pytest>=8.0->-r requirements-dev.txt (line 2)) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in .\.venv\Lib\site-packages (from pytest>=8.0->-r requirements-dev.txt (line 2)) (2.19.2)
+Requirement already satisfied: certifi in .\.venv\Lib\site-packages (from httpx>=0.26->-r requirements-dev.txt (line 3)) (2026.1.4)
+Requirement already satisfied: httpcore==1.* in .\.venv\Lib\site-packages (from httpx>=0.26->-r requirements-dev.txt (line 3)) (1.0.9)
+Requirement already satisfied: mypy-extensions>=0.4.3 in .\.venv\Lib\site-packages (from black>=24.0->-r requirements-dev.txt (line 5)) (1.1.0)
+Requirement already satisfied: pathspec>=1.0.0 in .\.venv\Lib\site-packages (from black>=24.0->-r requirements-dev.txt (line 5)) (1.0.4)
+Requirement already satisfied: platformdirs>=2 in .\.venv\Lib\site-packages (from black>=24.0->-r requirements-dev.txt (line 5)) (4.5.1)
+Requirement already satisfied: pytokens>=0.3.0 in .\.venv\Lib\site-packages (from black>=24.0->-r requirements-dev.txt (line 5)) (0.4.1)
+Collecting email-validator>=2.0.0 (from pydantic[email]>=2.6->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 5))
+  Using cached email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Collecting dnspython>=2.0.0 (from email-validator>=2.0.0->pydantic[email]>=2.6->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 5))
+  Using cached dnspython-2.8.0-py3-none-any.whl.metadata (5.7 kB)
+Requirement already satisfied: httptools>=0.6.3 in .\.venv\Lib\site-packages (from uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (0.7.1)
+Requirement already satisfied: pyyaml>=5.1 in .\.venv\Lib\site-packages (from uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (6.0.3)
+Requirement already satisfied: watchfiles>=0.13 in .\.venv\Lib\site-packages (from uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (1.1.1)
+Requirement already satisfied: websockets>=10.4 in .\.venv\Lib\site-packages (from uvicorn[standard]>=0.27->-r F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\requirements.txt (line 2)) (16.0)
+Using cached email_validator-2.3.0-py3-none-any.whl (35 kB)
+Using cached dnspython-2.8.0-py3-none-any.whl (331 kB)
+Installing collected packages: dnspython, email-validator
+Successfully installed dnspython-2.8.0 email-validator-2.3.0
+(.venv) PS F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api>   pytest
+FFF.FFFF                                                                                                         [100%]
+====================================================== FAILURES =======================================================
+________________________________________________ test_create_candidate ________________________________________________
+
+self = <sqlalchemy.orm.clsregistry._class_resolver object at 0x0000025CC221EBC0>
+
+    def _resolve_name(self) -> Union[Table, Type[Any], _ModNS]:
+        name = self.arg
+        d = self._dict
+        rval = None
+        try:
+            for token in name.split("."):
+                if rval is None:
+>                   rval = d[token]
+                           ^^^^^^^^
+
+.venv\Lib\site-packages\sqlalchemy\orm\clsregistry.py:516:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\sqlalchemy\util\_collections.py:345: in __missing__
+    self[key] = val = self.creator(key)
+                      ^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.orm.clsregistry._class_resolver object at 0x0000025CC221EBC0>, key = "list['FollowUp']"
+
+    def _access_cls(self, key: str) -> Any:
+        cls = self.cls
+
+        manager = attributes.manager_of_class(cls)
+        decl_base = manager.registry
+        assert decl_base is not None
+        decl_class_registry = decl_base._class_registry
+        metadata = decl_base.metadata
+
+        if self.favor_tables:
+            if key in metadata.tables:
+                return metadata.tables[key]
+            elif key in metadata._schemas:
+                return _GetTable(key, getattr(cls, "metadata", metadata))
+
+        if key in decl_class_registry:
+            return _determine_container(key, decl_class_registry[key])
+
+        if not self.favor_tables:
+            if key in metadata.tables:
+                return metadata.tables[key]
+            elif key in metadata._schemas:
+                return _GetTable(key, getattr(cls, "metadata", metadata))
+
+        if "_sa_module_registry" in decl_class_registry and key in cast(
+            _ModuleMarker, decl_class_registry["_sa_module_registry"]
+        ):
+            registry = cast(
+                _ModuleMarker, decl_class_registry["_sa_module_registry"]
+            )
+            return registry.resolve_attr(key)
+        elif self._resolvers:
+            for resolv in self._resolvers:
+                value = resolv(key)
+                if value is not None:
+                    return value
+
+>       return self.fallback[key]
+               ^^^^^^^^^^^^^^^^^^
+E       KeyError: "list['FollowUp']"
+
+.venv\Lib\site-packages\sqlalchemy\orm\clsregistry.py:484: KeyError
+
+The above exception was the direct cause of the following exception:
+
+client = <starlette.testclient.TestClient object at 0x0000025CC215EA50>
+
+    def test_create_candidate(client):
+        payload = {
+            "name": "Ana Lopez",
+            "email": "ana@example.com",
+            "stage": "sourced",
+        }
+
+>       response = client.post("/candidates", json=payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_api.py:8:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\starlette\testclient.py:546: in post
+    return super().post(
+.venv\Lib\site-packages\httpx\_client.py:1144: in post
+    return self.request(
+.venv\Lib\site-packages\starlette\testclient.py:445: in request
+    return super().request(
+.venv\Lib\site-packages\httpx\_client.py:825: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:914: in send
+    response = self._send_handling_auth(
+.venv\Lib\site-packages\httpx\_client.py:942: in _send_handling_auth
+    response = self._send_handling_redirects(
+.venv\Lib\site-packages\httpx\_client.py:979: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:1014: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\testclient.py:348: in handle_request
+    raise exc
+.venv\Lib\site-packages\starlette\testclient.py:345: in handle_request
+    portal.call(self.app, scope, receive, send)
+.venv\Lib\site-packages\anyio\from_thread.py:334: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+.venv\Lib\site-packages\anyio\from_thread.py:259: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\applications.py:1135: in __call__
+    await super().__call__(scope, receive, send)
+.venv\Lib\site-packages\starlette\applications.py:107: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\middleware\errors.py:186: in __call__
+    raise exc
+.venv\Lib\site-packages\starlette\middleware\errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+.venv\Lib\site-packages\starlette\middleware\exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:716: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:736: in app
+    await route.handle(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:290: in handle
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\fastapi\routing.py:115: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\routing.py:101: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\routing.py:355: in app
+    raw_response = await run_endpoint_function(
+.venv\Lib\site-packages\fastapi\routing.py:245: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\concurrency.py:32: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\to_thread.py:63: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:2502: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:986: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+app\main.py:46: in create_candidate_endpoint
+    candidate = create_candidate(session, payload)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app\services.py:15: in create_candidate
+    candidate = Candidate(**payload.model_dump())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<string>:4: in __init__
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state.py:591: in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+.venv\Lib\site-packages\sqlalchemy\event\attr.py:515: in __call__
+    fn(*args, **kw)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4419: in _event_on_init
+    instrumenting_mapper._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4268: in _do_configure_registries
+    mapper._post_configure_properties()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2427: in _post_configure_properties
+    prop.init()
+.venv\Lib\site-packages\sqlalchemy\orm\interfaces.py:595: in init
+    self.do_init()
+.venv\Lib\site-packages\sqlalchemy\orm\relationships.py:1655: in do_init
+    self._setup_entity()
+.venv\Lib\site-packages\sqlalchemy\orm\relationships.py:1865: in _setup_entity
+    self._clsregistry_resolve_name(argument)(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\clsregistry.py:520: in _resolve_name
+    self._raise_for_name(name, err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.orm.clsregistry._class_resolver object at 0x0000025CC221EBC0>, name = "list['FollowUp']"
+err = KeyError("list['FollowUp']")
+
+    def _raise_for_name(self, name: str, err: Exception) -> NoReturn:
+        generic_match = re.match(r"(.+)\[(.+)\]", name)
+
+        if generic_match:
+            clsarg = generic_match.group(2).strip("'")
+>           raise exc.InvalidRequestError(
+                f"When initializing mapper {self.prop.parent}, "
+                f'expression "relationship({self.arg!r})" seems to be '
+                "using a generic class as the argument to relationship(); "
+                "please state the generic argument "
+                "using an annotation, e.g. "
+                f'"{self.prop.key}: Mapped[{generic_match.group(1)}'
+                f"['{clsarg}']] = relationship()\""
+            ) from err
+E           sqlalchemy.exc.InvalidRequestError: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\clsregistry.py:491: InvalidRequestError
+------------------------------------------------ Captured stderr setup ------------------------------------------------
+2026-02-03 16:02:05,091 INFO app.main: Database initialized
+------------------------------------------------- Captured log setup --------------------------------------------------
+INFO     app.main:main.py:29 Database initialized
+__________________________________________ test_list_candidates_with_filters __________________________________________
+
+client = <starlette.testclient.TestClient object at 0x0000025CC21AB390>
+
+    def test_list_candidates_with_filters(client):
+>       client.post(
+            "/candidates",
+            json={
+                "name": "Ana Lopez",
+                "email": "ana@example.com",
+                "stage": "sourced",
+            },
+        )
+
+tests\test_api.py:17:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\starlette\testclient.py:546: in post
+    return super().post(
+.venv\Lib\site-packages\httpx\_client.py:1144: in post
+    return self.request(
+.venv\Lib\site-packages\starlette\testclient.py:445: in request
+    return super().request(
+.venv\Lib\site-packages\httpx\_client.py:825: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:914: in send
+    response = self._send_handling_auth(
+.venv\Lib\site-packages\httpx\_client.py:942: in _send_handling_auth
+    response = self._send_handling_redirects(
+.venv\Lib\site-packages\httpx\_client.py:979: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:1014: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\testclient.py:348: in handle_request
+    raise exc
+.venv\Lib\site-packages\starlette\testclient.py:345: in handle_request
+    portal.call(self.app, scope, receive, send)
+.venv\Lib\site-packages\anyio\from_thread.py:334: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+.venv\Lib\site-packages\anyio\from_thread.py:259: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\applications.py:1135: in __call__
+    await super().__call__(scope, receive, send)
+.venv\Lib\site-packages\starlette\applications.py:107: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\middleware\errors.py:186: in __call__
+    raise exc
+.venv\Lib\site-packages\starlette\middleware\errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+.venv\Lib\site-packages\starlette\middleware\exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:716: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:736: in app
+    await route.handle(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:290: in handle
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\fastapi\routing.py:115: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\routing.py:101: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\routing.py:355: in app
+    raw_response = await run_endpoint_function(
+.venv\Lib\site-packages\fastapi\routing.py:245: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\concurrency.py:32: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\to_thread.py:63: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:2502: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:986: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+app\main.py:46: in create_candidate_endpoint
+    candidate = create_candidate(session, payload)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app\services.py:15: in create_candidate
+    candidate = Candidate(**payload.model_dump())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<string>:4: in __init__
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state.py:591: in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+.venv\Lib\site-packages\sqlalchemy\event\attr.py:515: in __call__
+    fn(*args, **kw)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4419: in _event_on_init
+    instrumenting_mapper._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+registries = set(), cascade = True
+
+    @util.preload_module("sqlalchemy.orm.decl_api")
+    def _do_configure_registries(
+        registries: Set[_RegistryType], cascade: bool
+    ) -> None:
+        registry = util.preloaded.orm_decl_api.registry
+
+        orig = set(registries)
+
+        for reg in registry._recurse_with_dependencies(registries):
+            has_skip = False
+
+            for mapper in reg._mappers_to_configure():
+                run_configure = None
+
+                for fn in mapper.dispatch.before_mapper_configured:
+                    run_configure = fn(mapper, mapper.class_)
+                    if run_configure is EXT_SKIP:
+                        has_skip = True
+                        break
+                if run_configure is EXT_SKIP:
+                    continue
+
+                if getattr(mapper, "_configure_failed", False):
+                    e = sa_exc.InvalidRequestError(
+                        "One or more mappers failed to initialize - "
+                        "can't proceed with initialization of other "
+                        "mappers. Triggering mapper: '%s'. "
+                        "Original exception was: %s"
+                        % (mapper, mapper._configure_failed)
+                    )
+                    e._configure_failed = mapper._configure_failed  # type: ignore
+>                   raise e
+E                   sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Candidate(candidate)]'. Original exception was: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4264: InvalidRequestError
+------------------------------------------------ Captured stderr setup ------------------------------------------------
+2026-02-03 16:02:05,900 INFO app.main: Database initialized
+------------------------------------------------- Captured log setup --------------------------------------------------
+INFO     app.main:main.py:29 Database initialized
+_________________________________________________ test_followup_flow __________________________________________________
+
+client = <starlette.testclient.TestClient object at 0x0000025CC238C7D0>
+
+    def test_followup_flow(client):
+>       candidate = client.post(
+            "/candidates",
+            json={
+                "name": "Camila Rios",
+                "email": "camila@example.com",
+                "stage": "interview",
+            },
+        ).json()
+
+tests\test_api.py:48:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\starlette\testclient.py:546: in post
+    return super().post(
+.venv\Lib\site-packages\httpx\_client.py:1144: in post
+    return self.request(
+.venv\Lib\site-packages\starlette\testclient.py:445: in request
+    return super().request(
+.venv\Lib\site-packages\httpx\_client.py:825: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:914: in send
+    response = self._send_handling_auth(
+.venv\Lib\site-packages\httpx\_client.py:942: in _send_handling_auth
+    response = self._send_handling_redirects(
+.venv\Lib\site-packages\httpx\_client.py:979: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:1014: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\testclient.py:348: in handle_request
+    raise exc
+.venv\Lib\site-packages\starlette\testclient.py:345: in handle_request
+    portal.call(self.app, scope, receive, send)
+.venv\Lib\site-packages\anyio\from_thread.py:334: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+.venv\Lib\site-packages\anyio\from_thread.py:259: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\applications.py:1135: in __call__
+    await super().__call__(scope, receive, send)
+.venv\Lib\site-packages\starlette\applications.py:107: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\middleware\errors.py:186: in __call__
+    raise exc
+.venv\Lib\site-packages\starlette\middleware\errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+.venv\Lib\site-packages\starlette\middleware\exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:716: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:736: in app
+    await route.handle(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:290: in handle
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\fastapi\routing.py:115: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\routing.py:101: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\routing.py:355: in app
+    raw_response = await run_endpoint_function(
+.venv\Lib\site-packages\fastapi\routing.py:245: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\concurrency.py:32: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\to_thread.py:63: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:2502: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:986: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+app\main.py:46: in create_candidate_endpoint
+    candidate = create_candidate(session, payload)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app\services.py:15: in create_candidate
+    candidate = Candidate(**payload.model_dump())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<string>:4: in __init__
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state.py:591: in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+.venv\Lib\site-packages\sqlalchemy\event\attr.py:515: in __call__
+    fn(*args, **kw)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4419: in _event_on_init
+    instrumenting_mapper._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+registries = set(), cascade = True
+
+    @util.preload_module("sqlalchemy.orm.decl_api")
+    def _do_configure_registries(
+        registries: Set[_RegistryType], cascade: bool
+    ) -> None:
+        registry = util.preloaded.orm_decl_api.registry
+
+        orig = set(registries)
+
+        for reg in registry._recurse_with_dependencies(registries):
+            has_skip = False
+
+            for mapper in reg._mappers_to_configure():
+                run_configure = None
+
+                for fn in mapper.dispatch.before_mapper_configured:
+                    run_configure = fn(mapper, mapper.class_)
+                    if run_configure is EXT_SKIP:
+                        has_skip = True
+                        break
+                if run_configure is EXT_SKIP:
+                    continue
+
+                if getattr(mapper, "_configure_failed", False):
+                    e = sa_exc.InvalidRequestError(
+                        "One or more mappers failed to initialize - "
+                        "can't proceed with initialization of other "
+                        "mappers. Triggering mapper: '%s'. "
+                        "Original exception was: %s"
+                        % (mapper, mapper._configure_failed)
+                    )
+                    e._configure_failed = mapper._configure_failed  # type: ignore
+>                   raise e
+E                   sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Candidate(candidate)]'. Original exception was: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4264: InvalidRequestError
+------------------------------------------------ Captured stderr setup ------------------------------------------------
+2026-02-03 16:02:06,234 INFO app.main: Database initialized
+------------------------------------------------- Captured log setup --------------------------------------------------
+INFO     app.main:main.py:29 Database initialized
+_________________________________________ test_missing_candidate_returns_404 __________________________________________
+
+client = <starlette.testclient.TestClient object at 0x0000025CC2D90050>
+
+    def test_missing_candidate_returns_404(client):
+>       response = client.get("/candidates/9999")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_api.py:76:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\starlette\testclient.py:473: in get
+    return super().get(
+.venv\Lib\site-packages\httpx\_client.py:1053: in get
+    return self.request(
+.venv\Lib\site-packages\starlette\testclient.py:445: in request
+    return super().request(
+.venv\Lib\site-packages\httpx\_client.py:825: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:914: in send
+    response = self._send_handling_auth(
+.venv\Lib\site-packages\httpx\_client.py:942: in _send_handling_auth
+    response = self._send_handling_redirects(
+.venv\Lib\site-packages\httpx\_client.py:979: in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\httpx\_client.py:1014: in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\testclient.py:348: in handle_request
+    raise exc
+.venv\Lib\site-packages\starlette\testclient.py:345: in handle_request
+    portal.call(self.app, scope, receive, send)
+.venv\Lib\site-packages\anyio\from_thread.py:334: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\MrChispa\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+.venv\Lib\site-packages\anyio\from_thread.py:259: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\applications.py:1135: in __call__
+    await super().__call__(scope, receive, send)
+.venv\Lib\site-packages\starlette\applications.py:107: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\middleware\errors.py:186: in __call__
+    raise exc
+.venv\Lib\site-packages\starlette\middleware\errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+.venv\Lib\site-packages\starlette\middleware\exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:716: in __call__
+    await self.middleware_stack(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:736: in app
+    await route.handle(scope, receive, send)
+.venv\Lib\site-packages\starlette\routing.py:290: in handle
+    await self.app(scope, receive, send)
+.venv\Lib\site-packages\fastapi\routing.py:115: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+.venv\Lib\site-packages\starlette\_exception_handler.py:53: in wrapped_app
+    raise exc
+.venv\Lib\site-packages\starlette\_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+.venv\Lib\site-packages\fastapi\routing.py:101: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\fastapi\routing.py:355: in app
+    raw_response = await run_endpoint_function(
+.venv\Lib\site-packages\fastapi\routing.py:245: in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\starlette\concurrency.py:32: in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\to_thread.py:63: in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:2502: in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+.venv\Lib\site-packages\anyio\_backends\_asyncio.py:986: in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+app\main.py:66: in get_candidate_endpoint
+    return get_candidate(session, candidate_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app\services.py:48: in get_candidate
+    candidate = session.get(Candidate, candidate_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:3680: in get
+    return self._get_impl(
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:3859: in _get_impl
+    return db_load_fn(
+.venv\Lib\site-packages\sqlalchemy\orm\loading.py:695: in load_on_pk_identity
+    session.execute(
+.venv\Lib\site-packages\sqlmodel\orm\session.py:142: in execute
+    return super().execute(
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:2351: in execute
+    return self._execute_internal(
+.venv\Lib\site-packages\sqlalchemy\orm\session.py:2249: in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+.venv\Lib\site-packages\sqlalchemy\orm\context.py:306: in orm_execute_statement
+    result = conn.execute(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1419: in execute
+    return meth(
+.venv\Lib\site-packages\sqlalchemy\sql\elements.py:527: in _execute_on_connection
+    return connection._execute_clauseelement(
+.venv\Lib\site-packages\sqlalchemy\engine\base.py:1633: in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+.venv\Lib\site-packages\sqlalchemy\sql\elements.py:716: in _compile_w_cache
+    compiled_sql = self._compiler(
+.venv\Lib\site-packages\sqlalchemy\sql\elements.py:324: in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\sql\compiler.py:1448: in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+.venv\Lib\site-packages\sqlalchemy\sql\compiler.py:888: in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\sql\compiler.py:934: in process
+    return obj._compiler_dispatch(self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\sql\visitors.py:138: in _compiler_dispatch
+    return meth(self, **kw)  # type: ignore  # noqa: E501
+           ^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\sql\compiler.py:4783: in visit_select
+    compile_state = select_stmt._compile_state_factory(
+.venv\Lib\site-packages\sqlalchemy\sql\base.py:701: in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\context.py:447: in create_for_statement
+    return cls._create_orm_context(
+.venv\Lib\site-packages\sqlalchemy\orm\context.py:1175: in _create_orm_context
+    _QueryEntity.to_compile_state(
+.venv\Lib\site-packages\sqlalchemy\orm\context.py:2628: in to_compile_state
+    _MapperEntity(
+.venv\Lib\site-packages\sqlalchemy\orm\context.py:2708: in __init__
+    entity._post_inspect
+.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:1338: in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ^^^^^^^^^^^^^^
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2733: in _post_inspect
+    self._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+registries = set(), cascade = True
+
+    @util.preload_module("sqlalchemy.orm.decl_api")
+    def _do_configure_registries(
+        registries: Set[_RegistryType], cascade: bool
+    ) -> None:
+        registry = util.preloaded.orm_decl_api.registry
+
+        orig = set(registries)
+
+        for reg in registry._recurse_with_dependencies(registries):
+            has_skip = False
+
+            for mapper in reg._mappers_to_configure():
+                run_configure = None
+
+                for fn in mapper.dispatch.before_mapper_configured:
+                    run_configure = fn(mapper, mapper.class_)
+                    if run_configure is EXT_SKIP:
+                        has_skip = True
+                        break
+                if run_configure is EXT_SKIP:
+                    continue
+
+                if getattr(mapper, "_configure_failed", False):
+                    e = sa_exc.InvalidRequestError(
+                        "One or more mappers failed to initialize - "
+                        "can't proceed with initialization of other "
+                        "mappers. Triggering mapper: '%s'. "
+                        "Original exception was: %s"
+                        % (mapper, mapper._configure_failed)
+                    )
+                    e._configure_failed = mapper._configure_failed  # type: ignore
+>                   raise e
+E                   sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Candidate(candidate)]'. Original exception was: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4264: InvalidRequestError
+------------------------------------------------ Captured stderr setup ------------------------------------------------
+2026-02-03 16:02:06,591 INFO app.main: Database initialized
+------------------------------------------------- Captured log setup --------------------------------------------------
+INFO     app.main:main.py:29 Database initialized
+________________________________________________ test_create_candidate ________________________________________________
+
+session = <sqlmodel.orm.session.Session object at 0x0000025CC2285370>
+
+    def test_create_candidate(session):
+        payload = CandidateCreate(
+            name="Ana Lopez",
+            email="ana@example.com",
+            stage=Stage.sourced,
+        )
+
+>       candidate = create_candidate(session, payload)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_services.py:19:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\services.py:15: in create_candidate
+    candidate = Candidate(**payload.model_dump())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<string>:4: in __init__
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state.py:591: in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+.venv\Lib\site-packages\sqlalchemy\event\attr.py:515: in __call__
+    fn(*args, **kw)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4419: in _event_on_init
+    instrumenting_mapper._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+registries = set(), cascade = True
+
+    @util.preload_module("sqlalchemy.orm.decl_api")
+    def _do_configure_registries(
+        registries: Set[_RegistryType], cascade: bool
+    ) -> None:
+        registry = util.preloaded.orm_decl_api.registry
+
+        orig = set(registries)
+
+        for reg in registry._recurse_with_dependencies(registries):
+            has_skip = False
+
+            for mapper in reg._mappers_to_configure():
+                run_configure = None
+
+                for fn in mapper.dispatch.before_mapper_configured:
+                    run_configure = fn(mapper, mapper.class_)
+                    if run_configure is EXT_SKIP:
+                        has_skip = True
+                        break
+                if run_configure is EXT_SKIP:
+                    continue
+
+                if getattr(mapper, "_configure_failed", False):
+                    e = sa_exc.InvalidRequestError(
+                        "One or more mappers failed to initialize - "
+                        "can't proceed with initialization of other "
+                        "mappers. Triggering mapper: '%s'. "
+                        "Original exception was: %s"
+                        % (mapper, mapper._configure_failed)
+                    )
+                    e._configure_failed = mapper._configure_failed  # type: ignore
+>                   raise e
+E                   sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Candidate(candidate)]'. Original exception was: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4264: InvalidRequestError
+____________________________________________ test_list_candidates_filters _____________________________________________
+
+session = <sqlmodel.orm.session.Session object at 0x0000025CC40A4AF0>
+
+    def test_list_candidates_filters(session):
+>       create_candidate(
+            session,
+            CandidateCreate(name="Ana Lopez", email="ana@example.com", stage=Stage.sourced),
+        )
+
+tests\test_services.py:26:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\services.py:15: in create_candidate
+    candidate = Candidate(**payload.model_dump())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<string>:4: in __init__
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state.py:591: in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+.venv\Lib\site-packages\sqlalchemy\event\attr.py:515: in __call__
+    fn(*args, **kw)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4419: in _event_on_init
+    instrumenting_mapper._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+registries = set(), cascade = True
+
+    @util.preload_module("sqlalchemy.orm.decl_api")
+    def _do_configure_registries(
+        registries: Set[_RegistryType], cascade: bool
+    ) -> None:
+        registry = util.preloaded.orm_decl_api.registry
+
+        orig = set(registries)
+
+        for reg in registry._recurse_with_dependencies(registries):
+            has_skip = False
+
+            for mapper in reg._mappers_to_configure():
+                run_configure = None
+
+                for fn in mapper.dispatch.before_mapper_configured:
+                    run_configure = fn(mapper, mapper.class_)
+                    if run_configure is EXT_SKIP:
+                        has_skip = True
+                        break
+                if run_configure is EXT_SKIP:
+                    continue
+
+                if getattr(mapper, "_configure_failed", False):
+                    e = sa_exc.InvalidRequestError(
+                        "One or more mappers failed to initialize - "
+                        "can't proceed with initialization of other "
+                        "mappers. Triggering mapper: '%s'. "
+                        "Original exception was: %s"
+                        % (mapper, mapper._configure_failed)
+                    )
+                    e._configure_failed = mapper._configure_failed  # type: ignore
+>                   raise e
+E                   sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Candidate(candidate)]'. Original exception was: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4264: InvalidRequestError
+_________________________________________________ test_followup_flow __________________________________________________
+
+session = <sqlmodel.orm.session.Session object at 0x0000025CC40A5370>
+
+    def test_followup_flow(session):
+>       candidate = create_candidate(
+            session,
+            CandidateCreate(name="Mia", email="mia@example.com", stage=Stage.interview),
+        )
+
+tests\test_services.py:45:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\services.py:15: in create_candidate
+    candidate = Candidate(**payload.model_dump())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<string>:4: in __init__
+    ???
+.venv\Lib\site-packages\sqlalchemy\orm\state.py:591: in _initialize_instance
+    manager.dispatch.init(self, args, kwargs)
+.venv\Lib\site-packages\sqlalchemy\event\attr.py:515: in __call__
+    fn(*args, **kw)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4419: in _event_on_init
+    instrumenting_mapper._check_configure()
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:2410: in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4227: in _configure_registries
+    _do_configure_registries(registries, cascade)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+registries = set(), cascade = True
+
+    @util.preload_module("sqlalchemy.orm.decl_api")
+    def _do_configure_registries(
+        registries: Set[_RegistryType], cascade: bool
+    ) -> None:
+        registry = util.preloaded.orm_decl_api.registry
+
+        orig = set(registries)
+
+        for reg in registry._recurse_with_dependencies(registries):
+            has_skip = False
+
+            for mapper in reg._mappers_to_configure():
+                run_configure = None
+
+                for fn in mapper.dispatch.before_mapper_configured:
+                    run_configure = fn(mapper, mapper.class_)
+                    if run_configure is EXT_SKIP:
+                        has_skip = True
+                        break
+                if run_configure is EXT_SKIP:
+                    continue
+
+                if getattr(mapper, "_configure_failed", False):
+                    e = sa_exc.InvalidRequestError(
+                        "One or more mappers failed to initialize - "
+                        "can't proceed with initialization of other "
+                        "mappers. Triggering mapper: '%s'. "
+                        "Original exception was: %s"
+                        % (mapper, mapper._configure_failed)
+                    )
+                    e._configure_failed = mapper._configure_failed  # type: ignore
+>                   raise e
+E                   sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Candidate(candidate)]'. Original exception was: When initializing mapper Mapper[Candidate(candidate)], expression "relationship("list['FollowUp']")" seems to be using a generic class as the argument to relationship(); please state the generic argument using an annotation, e.g. "followups: Mapped[list['FollowUp']] = relationship()"
+
+.venv\Lib\site-packages\sqlalchemy\orm\mapper.py:4264: InvalidRequestError
+================================================== warnings summary ===================================================
+app\main.py:26
+  F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\app\main.py:26: DeprecationWarning:
+          on_event is deprecated, use lifespan event handlers instead.
+
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+
+    @app.on_event("startup")
+
+.venv\Lib\site-packages\fastapi\applications.py:4576
+  F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api\.venv\Lib\site-packages\fastapi\applications.py:4576: DeprecationWarning:
+          on_event is deprecated, use lifespan event handlers instead.
+
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+
+    return self.router.on_event(event_type)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============================================== short test summary info ===============================================
+FAILED tests/test_api.py::test_create_candidate - sqlalchemy.exc.InvalidRequestError: When initializing mapper Mapper[Candidate(candidate)], expression "relationship...
+FAILED tests/test_api.py::test_list_candidates_with_filters - sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of...
+FAILED tests/test_api.py::test_followup_flow - sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of...
+FAILED tests/test_api.py::test_missing_candidate_returns_404 - sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of...
+FAILED tests/test_services.py::test_create_candidate - sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of...
+FAILED tests/test_services.py::test_list_candidates_filters - sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of...
+FAILED tests/test_services.py::test_followup_flow - sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of...
+7 failed, 1 passed, 2 warnings in 3.20s
+(.venv) PS F:\Lucio\Repo Linkedin-Github\fastapi-ats-followup-api>

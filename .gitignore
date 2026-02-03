@@ -6,4 +6,11 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .env
-app.db
+*.db
+.env.*
+.coverage
+coverage.xml
+htmlcov/
+.DS_Store
+.vscode/
+.idea/

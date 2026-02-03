@@ -1,8 +1,7 @@
 """FastAPI application entrypoint."""
 
-from __future__ import annotations
-
 import logging
+from contextlib import asynccontextmanager
 
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from sqlmodel import Session
@@ -10,8 +9,14 @@ from sqlmodel import Session
 from .db import get_session, init_db
 from .models import Stage
 from .schemas import CandidateCreate, CandidateRead, FollowUpCreate, FollowUpRead
-from .services import (NotFoundError, create_candidate, create_followup,
-                       get_candidate, list_candidates, list_followups)
+from .services import (
+    NotFoundError,
+    create_candidate,
+    create_followup,
+    get_candidate,
+    list_candidates,
+    list_followups,
+)
 from .settings import settings
 
 logging.basicConfig(
@@ -20,13 +25,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="ATS Follow-up API", version="1.0.0")
 
-
-@app.on_event("startup")
-def on_startup() -> None:
+@asynccontextmanager
+async def lifespan(_: FastAPI):
     init_db()
     logger.info("Database initialized")
+    yield
+
+
+app = FastAPI(title="ATS Follow-up API", version="1.0.0", lifespan=lifespan)
 
 
 @app.get("/health")
